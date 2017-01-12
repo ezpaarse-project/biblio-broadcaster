@@ -10,6 +10,20 @@ This repository aims to create a general-purpose version of [bibliomap-enricher]
 
 TODO
 
+## Usage
+
+A socket.io client can be downloaded at `/socket.io/socket.io.js`. Then you can listen for the `ec` events.
+
+```html
+  <script src="http://localhost:27779/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io('http://localhost:27779');
+    socket.on('ec', function (data) {
+      console.log(data);
+    });
+  </script>
+```
+
 ## Configuration
 
 You can customize the configuration using environment variables:
