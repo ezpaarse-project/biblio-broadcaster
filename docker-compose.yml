@@ -1,0 +1,20 @@
+version: '2'
+services:
+  bibliomap-enricher:
+    container_name: biblio-broadcaster
+    image: ezpaarseproject/biblio-broadcaster:1.0.0
+    working_dir: /app
+    environment:
+      NODE_ENV: "production"
+      http_proxy
+      https_proxy
+      no_proxy
+      DEBUG
+      BBE_EZPAARSE_URL
+      BBE_EZPAARSE_PREDEF
+      BBE_HARVESTER_HOST
+      BBE_HARVESTER_PORT
+      BBE_BROADCAST_PORT
+    tty: true         # to have nice debug(...) outputs
+    stdin_open: true  # to be able to use CTRL+C to stop the debug
+    restart: unless-stopped

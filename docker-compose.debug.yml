@@ -1,0 +1,22 @@
+version: '2'
+services:
+  biblio-broadcaster:
+    container_name: biblio-broadcaster
+    image: node:6.9.4
+    volumes:
+      - .:/app
+    working_dir: /app
+    environment:
+      - NODE_ENV=development
+      - http_proxy
+      - https_proxy
+      - no_proxy
+      - DEBUG
+      - BBE_EZPAARSE_URL
+      - BBE_EZPAARSE_PREDEF
+      - BBE_HARVESTER_HOST
+      - BBE_HARVESTER_PORT
+      - BBE_BROADCAST_PORT
+    tty: true         # to have nice debug(...) outputs
+    stdin_open: true  # to be able to use CTRL+C to stop the debug
+    command: npm start
