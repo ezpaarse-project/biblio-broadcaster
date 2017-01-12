@@ -4,13 +4,13 @@ This repository aims to create a general-purpose version of [bibliomap-enricher]
 
 ## Prerequisites
 
-  * Docker/docker-compose or node >6
+  * Docker/docker-compose
 
-## Installation
+## Install and run
 
-TODO
+This project is expected to work with [bibliomap-harvester](https://github.com/ezpaarse-project/bibliomap-harvester) and [ezPAARSE](https://github.com/ezpaarse-project/ezpaarse). Have a look at [bibliomap](https://github.com/ezpaarse-project/bibliomap) for an example.
 
-## Usage
+## How to use
 
 A socket.io client can be downloaded at `/socket.io/socket.io.js`. Then you can listen for the `ec` events.
 
@@ -42,5 +42,6 @@ Look at [config.json](https://github.com/ezpaarse-project/biblio-broadcaster/blo
 ```
 git clone https://github.com/ezpaarse-project/biblio-broadcaster.git
 cd biblio-broadcaster
-DEBUG=biblio* npm start
+make install
+DEBUG=biblio* make run-debug
 ```
