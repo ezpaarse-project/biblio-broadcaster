@@ -8,7 +8,7 @@ This repository aims to create a general-purpose version of [bibliomap-enricher]
 
 ## Install and run
 
-This project is expected to work with [bibliomap-harvester](https://github.com/ezpaarse-project/bibliomap-harvester) and [ezPAARSE](https://github.com/ezpaarse-project/ezpaarse). Have a look at [bibliomap](https://github.com/ezpaarse-project/bibliomap) for an example.
+This project is expected to work with [bibliomap-harvester](https://github.com/ezpaarse-project/bibliomap-harvester) and [ezPAARSE](https://github.com/ezpaarse-project/ezpaarse). An example will be available soon for [bibliomap](https://github.com/ezpaarse-project/bibliomap).
 
 ## How to use
 
