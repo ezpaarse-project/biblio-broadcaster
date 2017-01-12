@@ -1,4 +1,4 @@
-FROM node:6.9.1
+FROM node:6.9.4
 
 # install yarn (faster than npm...)
 RUN npm config set strict-ssl false
