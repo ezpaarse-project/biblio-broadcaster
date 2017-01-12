@@ -17,7 +17,7 @@ A socket.io client can be downloaded at `/socket.io/socket.io.js`. Then you can 
 ```html
   <script src="http://localhost:27779/socket.io/socket.io.js"></script>
   <script>
-    const socket = io('http://localhost:27779');
+    var socket = io('http://localhost:27779');
     socket.on('ec', function (data) {
       console.log(data);
     });
